@@ -6,9 +6,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/bitfinex"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/blep-ai/gocryptotrader_types/config"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/bitfinex"
+	"github.com/blep-ai/gocryptotrader_types/portfolio"
 )

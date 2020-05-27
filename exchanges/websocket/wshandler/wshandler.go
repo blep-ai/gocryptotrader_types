@@ -15,6 +15,6 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/config"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/protocol"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/websocket/wsorderbook"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/protocol"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/websocket/wsorderbook"
 )
 type Websocket struct {
 	canUseAuthenticatedEndpoints bool

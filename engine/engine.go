@@ -11,17 +11,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	gctlog "github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/utils"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/config"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
+	"github.com/blep-ai/gocryptotrader_types/dispatch"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
+	gctscript "github.com/blep-ai/gocryptotrader_types/gctscript/vm"
+	gctlog "github.com/blep-ai/gocryptotrader_types/log"
+	"github.com/blep-ai/gocryptotrader_types/portfolio"
+	"github.com/blep-ai/gocryptotrader_types/portfolio/withdraw"
+	"github.com/blep-ai/gocryptotrader_types/utils"
 )
 type Engine struct {
 	Config                      *config.Config

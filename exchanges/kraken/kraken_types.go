@@ -3,7 +3,7 @@ package kraken
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type TimeResponse struct {
 	Unixtime int64  `json:"unixtime"`

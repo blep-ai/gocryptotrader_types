@@ -9,11 +9,11 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/config"
+	"github.com/blep-ai/gocryptotrader_types/core"
+	"github.com/blep-ai/gocryptotrader_types/database"
+	"github.com/blep-ai/gocryptotrader_types/database/repository"
 )
 type driverConfig struct {
 	DBName    string   `json:"dbname,omitempty"`

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/okgroup"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/okgroup"
 )
 type OKEX struct {
 	okgroup.OKGroup

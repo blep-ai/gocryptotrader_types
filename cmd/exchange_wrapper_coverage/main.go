@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/engine"
+	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/portfolio/withdraw"
 )

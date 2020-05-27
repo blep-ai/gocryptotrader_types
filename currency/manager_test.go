@@ -3,5 +3,5 @@ package currency
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )

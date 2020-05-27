@@ -3,7 +3,7 @@ package coinbene
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
 type TickerData struct {
 	Symbol      string  `json:"symbol"`

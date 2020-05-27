@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type Checker struct {
 	DNSList       []string

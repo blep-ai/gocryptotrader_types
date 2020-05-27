@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/blep-ai/gocryptotrader_types/common"
 )
 type APIKeyParams struct {
 	// API Key ID (public component).

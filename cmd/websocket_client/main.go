@@ -8,10 +8,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/common/crypto"
+	"github.com/blep-ai/gocryptotrader_types/config"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
 type WebsocketEvent struct {
 	Exchange  string `json:"exchange,omitempty"`

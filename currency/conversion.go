@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type ConversionRates struct {
 	m   map[*Item]map[*Item]*float64

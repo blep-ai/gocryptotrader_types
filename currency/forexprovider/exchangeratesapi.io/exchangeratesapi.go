@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/blep-ai/gocryptotrader_types/common"
 )
 type FXHandler struct {
 	Primary Provider

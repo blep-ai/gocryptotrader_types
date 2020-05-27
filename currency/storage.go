@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
+	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

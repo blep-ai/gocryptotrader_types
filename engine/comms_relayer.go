@@ -4,9 +4,9 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/thrasher-corp/gocryptotrader/communications"
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/communications"
+	"github.com/blep-ai/gocryptotrader_types/communications/base"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type commsManager struct {
 	started  int32

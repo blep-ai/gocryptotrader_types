@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
-	ntpclient "github.com/thrasher-corp/gocryptotrader/ntpclient"
+	"github.com/blep-ai/gocryptotrader_types/log"
+	ntpclient "github.com/blep-ai/gocryptotrader_types/ntpclient"
 )
 type ntpManager struct {
 	started       int32

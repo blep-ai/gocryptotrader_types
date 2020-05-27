@@ -3,6 +3,6 @@ package stats
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )

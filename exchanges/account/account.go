@@ -6,5 +6,5 @@ import (
 	"strings"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
+	"github.com/blep-ai/gocryptotrader_types/dispatch"
 )

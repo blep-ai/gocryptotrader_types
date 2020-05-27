@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type ntppacket struct {
 	Settings       uint8  // leap yr indicator, ver number, and mode

@@ -1,4 +1,4 @@
-module github.com/thrasher-corp/gocryptotrader
+module github.com/blep-ai/gocryptotrader_types
 
 go 1.12
 

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type MarketInfoResponse struct {
 	Result string                    `json:"result"`

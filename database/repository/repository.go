@@ -1,5 +1,5 @@
 package repository
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/blep-ai/gocryptotrader_types/database"
 )

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
-	math "github.com/thrasher-corp/gocryptotrader/common/math"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	math "github.com/blep-ai/gocryptotrader_types/common/math"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type WhaleBombResult struct {
 	Amount               float64

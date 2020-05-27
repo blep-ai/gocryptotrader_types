@@ -5,6 +5,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/core"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )

@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/core"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
+	"github.com/blep-ai/gocryptotrader_types/core"
 )
 type Contributor struct {
 	Login         string `json:"login"`

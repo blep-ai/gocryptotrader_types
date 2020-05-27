@@ -9,6 +9,6 @@ import (
 	"time"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/convert"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

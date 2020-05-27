@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
+	"github.com/blep-ai/gocryptotrader_types/database/drivers"
 )
 type Instance struct {
 	SQL       *sql.DB

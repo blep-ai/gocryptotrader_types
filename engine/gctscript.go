@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"sync/atomic"
 
-	"github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/gctscript/vm"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type gctScriptManager struct {
 	started  int32

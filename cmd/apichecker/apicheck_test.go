@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/convert"
+	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

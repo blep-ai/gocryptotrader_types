@@ -3,7 +3,7 @@ package gemini
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 	"golang.org/x/time/rate"
 )
 type RateLimit struct {

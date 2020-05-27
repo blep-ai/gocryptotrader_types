@@ -8,9 +8,9 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
 type Bitflyer struct {
 	exchange.Base

@@ -3,8 +3,8 @@ package currencyconverter
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
 type CurrencyConverter struct {
 	base.Base

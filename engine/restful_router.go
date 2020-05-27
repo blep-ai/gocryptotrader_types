@@ -10,6 +10,6 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

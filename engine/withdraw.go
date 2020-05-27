@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	withdrawDataStore "github.com/thrasher-corp/gocryptotrader/database/repository/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/gctrpc"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	withdrawDataStore "github.com/blep-ai/gocryptotrader_types/database/repository/withdraw"
+	"github.com/blep-ai/gocryptotrader_types/gctrpc"
+	"github.com/blep-ai/gocryptotrader_types/log"
+	"github.com/blep-ai/gocryptotrader_types/portfolio/withdraw"
 )

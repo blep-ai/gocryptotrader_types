@@ -3,7 +3,7 @@ package hitbtc
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type TickerResponse struct {
 	Ask         float64   `json:"ask,string"`

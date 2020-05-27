@@ -11,7 +11,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/common/crypto"
 	"golang.org/x/crypto/scrypt"
 )

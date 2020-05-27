@@ -6,5 +6,5 @@ import (
 	"strings"
 
 	"github.com/thrasher-corp/gct-ta/indicators"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules"
+	"github.com/blep-ai/gocryptotrader_types/gctscript/modules"
 )

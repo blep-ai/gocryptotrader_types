@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/crypto"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type Yobit struct {
 	exchange.Base

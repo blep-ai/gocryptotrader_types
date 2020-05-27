@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/blep-ai/gocryptotrader_types/common"
 )
 type responsePayload struct {
 	Price    float64 `json:"price"`

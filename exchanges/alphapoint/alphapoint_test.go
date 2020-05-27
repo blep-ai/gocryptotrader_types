@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/blep-ai/gocryptotrader_types/common"
+	"github.com/blep-ai/gocryptotrader_types/core"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/portfolio/withdraw"
 )

@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	dbpsql "github.com/thrasher-corp/gocryptotrader/database/drivers/postgres"
-	dbsqlite3 "github.com/thrasher-corp/gocryptotrader/database/drivers/sqlite3"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/database"
+	dbpsql "github.com/blep-ai/gocryptotrader_types/database/drivers/postgres"
+	dbsqlite3 "github.com/blep-ai/gocryptotrader_types/database/drivers/sqlite3"
+	"github.com/blep-ai/gocryptotrader_types/log"
 	"github.com/thrasher-corp/sqlboiler/boil"
 )
 type databaseManager struct {

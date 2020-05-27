@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/protocol"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/database"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/protocol"
+	gctscript "github.com/blep-ai/gocryptotrader_types/gctscript/vm"
+	"github.com/blep-ai/gocryptotrader_types/log"
+	"github.com/blep-ai/gocryptotrader_types/portfolio"
+	"github.com/blep-ai/gocryptotrader_types/portfolio/banking"
 )
 type Config struct {
 	Name              string                  `json:"name"`

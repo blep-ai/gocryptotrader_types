@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
-	"github.com/thrasher-corp/gocryptotrader/database/testhelpers"
+	"github.com/blep-ai/gocryptotrader_types/database"
+	"github.com/blep-ai/gocryptotrader_types/database/drivers"
+	"github.com/blep-ai/gocryptotrader_types/database/repository"
+	"github.com/blep-ai/gocryptotrader_types/database/testhelpers"
 	"github.com/thrasher-corp/goose"
 	"github.com/volatiletech/null"
 )

@@ -14,8 +14,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/timedmutex"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/mock"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/nonce"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/timedmutex"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/mock"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/nonce"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

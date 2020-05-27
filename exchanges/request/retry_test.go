@@ -7,5 +7,5 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )

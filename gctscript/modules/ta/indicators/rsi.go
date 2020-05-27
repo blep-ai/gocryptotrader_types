@@ -8,8 +8,8 @@ import (
 
 	objects "github.com/d5/tengo/v2"
 	"github.com/thrasher-corp/gct-ta/indicators"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/wrappers/validator"
+	"github.com/blep-ai/gocryptotrader_types/gctscript/modules"
+	"github.com/blep-ai/gocryptotrader_types/gctscript/wrappers/validator"
 )
 type RSI struct {
 	objects.Array

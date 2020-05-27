@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/thrasher-corp/gocryptotrader/connchecker"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/connchecker"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )
 type connectionManager struct {
 	started int32

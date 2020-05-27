@@ -14,5 +14,5 @@ import (
 	"os"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/file"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
 )

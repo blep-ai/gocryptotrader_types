@@ -7,5 +7,5 @@ import (
 
 	// import go libpq driver package
 	_ "github.com/lib/pq"
-	"github.com/thrasher-corp/gocryptotrader/database"
+	"github.com/blep-ai/gocryptotrader_types/database"
 )

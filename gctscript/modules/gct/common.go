@@ -9,7 +9,7 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules/ta/indicators"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
+	"github.com/blep-ai/gocryptotrader_types/gctscript/modules/ta/indicators"
+	"github.com/blep-ai/gocryptotrader_types/log"
 )

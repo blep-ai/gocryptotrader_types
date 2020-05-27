@@ -3,9 +3,9 @@ package engine
 import (
 	"net/http"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/account"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/orderbook"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/ticker"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/account"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/orderbook"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/ticker"
 )
 type Route struct {
 	Name        string

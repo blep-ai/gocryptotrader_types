@@ -3,5 +3,5 @@ package openexchangerates
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
 )

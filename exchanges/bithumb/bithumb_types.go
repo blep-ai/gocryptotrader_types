@@ -3,7 +3,7 @@ package bithumb
 import (
 	"encoding/json"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type Ticker struct {
 	OpeningPrice              float64 `json:"opening_price,string"`

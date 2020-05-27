@@ -5,6 +5,6 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
+	"github.com/blep-ai/gocryptotrader_types/config"
 )

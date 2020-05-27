@@ -6,6 +6,6 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
+	"github.com/blep-ai/gocryptotrader_types/database"
+	"github.com/blep-ai/gocryptotrader_types/database/drivers"
 )

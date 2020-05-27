@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/common/timedmutex"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/nonce"
+	"github.com/blep-ai/gocryptotrader_types/common/timedmutex"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/nonce"
 )
 type Requester struct {
 	HTTPClient         *http.Client

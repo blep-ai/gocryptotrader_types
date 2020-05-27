@@ -13,8 +13,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
+	"github.com/blep-ai/gocryptotrader_types/common/crypto"
+	"github.com/blep-ai/gocryptotrader_types/common/file"
 )
 type HTTPResponse struct {
 	Data        json.RawMessage     `json:"data"`

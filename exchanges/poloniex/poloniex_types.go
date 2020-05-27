@@ -3,7 +3,7 @@ package poloniex
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type Ticker struct {
 	ID            float64 `json:"id"`

@@ -3,5 +3,5 @@ package communications
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/blep-ai/gocryptotrader_types/config"
 )

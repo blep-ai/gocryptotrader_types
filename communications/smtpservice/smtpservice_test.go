@@ -3,6 +3,6 @@ package smtpservice
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/blep-ai/gocryptotrader_types/communications/base"
+	"github.com/blep-ai/gocryptotrader_types/config"
 )

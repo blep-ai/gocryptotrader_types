@@ -3,7 +3,7 @@ package zb
 import (
 	"encoding/json"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type Subscription struct {
 	Event   string `json:"event"`

@@ -3,7 +3,7 @@ package okgroup
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type GetAccountCurrenciesResponse struct {
 	Name          string  `json:"name"`

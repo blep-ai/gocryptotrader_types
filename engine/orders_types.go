@@ -3,8 +3,8 @@ package engine
 import (
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/currency"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
 type orderManagerConfig struct {
 	EnforceLimitConfig     bool

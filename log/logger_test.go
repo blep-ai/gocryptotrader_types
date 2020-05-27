@@ -7,5 +7,5 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
+	"github.com/blep-ai/gocryptotrader_types/common/convert"
 )

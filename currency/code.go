@@ -6,5 +6,5 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/blep-ai/gocryptotrader_types/common"
 )

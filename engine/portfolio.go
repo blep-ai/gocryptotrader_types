@@ -5,8 +5,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/blep-ai/gocryptotrader_types/log"
+	"github.com/blep-ai/gocryptotrader_types/portfolio"
 )
 type portfolioManager struct {
 	started  int32

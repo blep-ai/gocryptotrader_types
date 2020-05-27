@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/sharedtestvalues"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/ticker"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/websocket/wshandler"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/sharedtestvalues"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/ticker"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/websocket/wshandler"
 )

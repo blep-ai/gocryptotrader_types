@@ -1,8 +1,8 @@
 package openexchangerates
 
 import (
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
 type OXR struct {
 	base.Base

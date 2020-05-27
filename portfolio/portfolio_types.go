@@ -3,7 +3,7 @@ package portfolio
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/blep-ai/gocryptotrader_types/currency"
 )
 type Base struct {
 	Addresses []Address `json:"addresses"`

@@ -3,7 +3,7 @@ package currency
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
+	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
 )
 type MainConfiguration struct {
 	ForexProviders         []FXSettings

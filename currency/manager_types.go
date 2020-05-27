@@ -3,7 +3,7 @@ package currency
 import (
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
+	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
 type PairsManager struct {
 	RequestFormat   *PairFormat               `json:"requestFormat,omitempty"`

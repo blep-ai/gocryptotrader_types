@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/coinmarketcap"
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider"
+	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
+	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider"
 )
 type Storage struct {
 	// FiatCurrencies defines the running fiat currencies in the currency
