@@ -1,5 +1,1 @@
 package currencyconverter
-
-import (
-	"testing"
-)

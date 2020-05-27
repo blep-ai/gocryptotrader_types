@@ -1,8 +1,5 @@
 package banking
 
-import (
-	"sync"
-)
 type Account struct {
 	Enabled             bool    `json:"enabled"`
 	ID                  string  `json:"id,omitempty"`

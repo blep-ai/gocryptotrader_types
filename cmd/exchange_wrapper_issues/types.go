@@ -7,6 +7,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
+
 type Config struct {
 	OrderSubmission OrderSubmission                         `json:"orderSubmission"`
 	WalletAddress   string                                  `json:"withdrawWalletAddress"`

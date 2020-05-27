@@ -1,22 +1,9 @@
 package sqlite3
 
 import (
-	"context"
-	"database/sql"
-	"fmt"
-	"reflect"
-	"strings"
-	"sync"
-	"time"
-
-	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/boil"
-	"github.com/thrasher-corp/sqlboiler/queries"
-	"github.com/thrasher-corp/sqlboiler/queries/qm"
-	"github.com/thrasher-corp/sqlboiler/queries/qmhelper"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
 	"github.com/volatiletech/null"
 )
+
 type Script struct {
 	ID             string     `boil:"id" json:"id" toml:"id" yaml:"id"`
 	ScriptID       string     `boil:"script_id" json:"script_id" toml:"script_id" yaml:"script_id"`

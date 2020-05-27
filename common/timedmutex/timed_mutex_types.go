@@ -4,6 +4,7 @@ import (
 	"sync"
 	"time"
 )
+
 type TimedMutex struct {
 	mtx       sync.Mutex
 	timerLock sync.RWMutex

@@ -1,11 +1,10 @@
 package exchangerates
 
 import (
-	"time"
-
 	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
+
 type ExchangeRates struct {
 	base.Base
 	Requester *request.Requester

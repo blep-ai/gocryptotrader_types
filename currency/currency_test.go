@@ -1,5 +1,1 @@
 package currency
-
-import (
-	"testing"
-)

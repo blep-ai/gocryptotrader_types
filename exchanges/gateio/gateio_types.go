@@ -3,9 +3,8 @@ package gateio
 import (
 	"encoding/json"
 	"time"
-
-	"github.com/blep-ai/gocryptotrader_types/currency"
 )
+
 type MarketInfoResponse struct {
 	Result string                    `json:"result"`
 	Pairs  []MarketInfoPairsResponse `json:"pairs"`

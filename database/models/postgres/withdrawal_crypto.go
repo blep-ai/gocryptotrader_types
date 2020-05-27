@@ -1,23 +1,9 @@
 package postgres
 
 import (
-	"context"
-	"database/sql"
-	"fmt"
-	"reflect"
-	"strconv"
-	"strings"
-	"sync"
-	"time"
-
-	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/boil"
-	"github.com/thrasher-corp/sqlboiler/queries"
-	"github.com/thrasher-corp/sqlboiler/queries/qm"
-	"github.com/thrasher-corp/sqlboiler/queries/qmhelper"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
 	"github.com/volatiletech/null"
 )
+
 type WithdrawalCrypto struct {
 	ID                 int64       `boil:"id" json:"id" toml:"id" yaml:"id"`
 	WithdrawalCryptoID null.String `boil:"withdrawal_crypto_id" json:"withdrawal_crypto_id,omitempty" toml:"withdrawal_crypto_id" yaml:"withdrawal_crypto_id,omitempty"`

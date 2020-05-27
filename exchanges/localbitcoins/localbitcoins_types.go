@@ -3,6 +3,7 @@ package localbitcoins
 import (
 	"time"
 )
+
 type GeneralError struct {
 	Error struct {
 		Message   string `json:"message"`

@@ -1,3 +1,5 @@
+import "time"
+
 type WebsocketRequest struct {
 	Command   string        `json:"op"`
 	Arguments []interface{} `json:"args"`

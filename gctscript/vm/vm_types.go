@@ -2,12 +2,12 @@ package vm
 
 import (
 	"context"
-	"sync"
 	"time"
 
 	"github.com/d5/tengo/v2"
 	"github.com/gofrs/uuid"
 )
+
 type VM struct {
 	ID       uuid.UUID
 	Hash     string

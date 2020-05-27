@@ -2,10 +2,8 @@ package zb
 
 import (
 	"time"
-
-	"github.com/blep-ai/gocryptotrader_types/currency"
-	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
+
 type OrderbookResponse struct {
 	Timestamp int64       `json:"timestamp"`
 	Asks      [][]float64 `json:"asks"`

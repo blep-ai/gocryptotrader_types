@@ -1,23 +1,5 @@
 package wshandler
 
-import (
-	"bytes"
-	"compress/flate"
-	"compress/gzip"
-	"encoding/json"
-	"errors"
-	"net"
-	"net/http"
-	"os"
-	"strings"
-	"sync"
-	"testing"
-	"time"
-
-	"github.com/gorilla/websocket"
-	"github.com/blep-ai/gocryptotrader_types/currency"
-	"github.com/blep-ai/gocryptotrader_types/exchanges/protocol"
-)
 type testStruct struct {
 	Error error
 	WC    WebsocketConnection

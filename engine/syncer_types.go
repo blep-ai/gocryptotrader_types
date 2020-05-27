@@ -7,6 +7,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
+
 type CurrencyPairSyncerConfig struct {
 	SyncTicker       bool
 	SyncOrderbook    bool

@@ -1,5 +1,1 @@
 package log
-
-import (
-	"io"
-)

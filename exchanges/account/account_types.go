@@ -3,10 +3,11 @@ package account
 import (
 	"sync"
 
-	"github.com/gofrs/uuid"
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/dispatch"
+	"github.com/gofrs/uuid"
 )
+
 type Service struct {
 	accounts map[string]*Account
 	mux      *dispatch.Mux

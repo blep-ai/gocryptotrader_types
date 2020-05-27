@@ -110,6 +110,7 @@ const (
 	// MsgStatusError message to display when failure occurs
 	MsgStatusError string = "error"
 )
+
 type Settings struct {
 	ConfigFile            string
 	DataDir               string

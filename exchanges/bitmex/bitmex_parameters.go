@@ -1,14 +1,5 @@
 package bitmex
 
-import (
-	"errors"
-	"net/url"
-	"reflect"
-	"strconv"
-	"strings"
-
-	"github.com/blep-ai/gocryptotrader_types/common"
-)
 type APIKeyParams struct {
 	// API Key ID (public component).
 	APIKeyID string `json:"apiKeyID,omitempty"`

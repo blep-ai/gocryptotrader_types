@@ -14,6 +14,7 @@ var AcceptedWalletNames = []string{"trading", "exchange", "deposit", "margin",
 
 // AcceptableMethods defines a map of currency codes to methods
 var AcceptableMethods = make(map[string]string)
+
 type Ticker struct {
 	FlashReturnRate    float64
 	Bid                float64

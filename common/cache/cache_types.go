@@ -4,6 +4,7 @@ import (
 	"container/list"
 	"sync"
 )
+
 type LRUCache struct {
 	lru *LRU
 	m   sync.Mutex

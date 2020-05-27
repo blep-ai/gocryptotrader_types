@@ -1,18 +1,9 @@
 package main
 
 import (
-	"encoding/json"
-	"errors"
-	"fmt"
-	"log"
-	"net/http"
-
-	"github.com/gorilla/websocket"
-	"github.com/blep-ai/gocryptotrader_types/common"
-	"github.com/blep-ai/gocryptotrader_types/common/crypto"
-	"github.com/blep-ai/gocryptotrader_types/config"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
+
 type WebsocketEvent struct {
 	Exchange  string `json:"exchange,omitempty"`
 	AssetType string `json:"assetType,omitempty"`

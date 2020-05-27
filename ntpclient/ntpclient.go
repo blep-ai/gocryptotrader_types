@@ -1,12 +1,5 @@
 package ntpclient
 
-import (
-	"encoding/binary"
-	"net"
-	"time"
-
-	"github.com/blep-ai/gocryptotrader_types/log"
-)
 type ntppacket struct {
 	Settings       uint8  // leap yr indicator, ver number, and mode
 	Stratum        uint8  // stratum of local clock

@@ -5,6 +5,7 @@ import (
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 )
+
 type Product struct {
 	ID             string      `json:"id"`
 	BaseCurrency   string      `json:"base_currency"`

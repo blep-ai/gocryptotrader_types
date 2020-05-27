@@ -3,11 +3,11 @@ package request
 import (
 	"io"
 	"net/http"
-	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/common/timedmutex"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/nonce"
 )
+
 type Requester struct {
 	HTTPClient         *http.Client
 	limiter            Limiter

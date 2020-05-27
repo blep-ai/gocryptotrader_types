@@ -1,26 +1,10 @@
 package okgroup
 
 import (
-	"bytes"
-	"context"
-	"encoding/json"
-	"errors"
-	"fmt"
-	"net/http"
-	"net/url"
-	"reflect"
-	"strconv"
-	"strings"
-	"time"
-
-	"github.com/google/go-querystring/query"
-	"github.com/blep-ai/gocryptotrader_types/common/crypto"
 	exchange "github.com/blep-ai/gocryptotrader_types/exchanges"
-	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
-	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/websocket/wshandler"
-	"github.com/blep-ai/gocryptotrader_types/log"
 )
+
 type OKGroup struct {
 	exchange.Base
 	ExchangeName  string

@@ -1,9 +1,9 @@
 package btcmarkets
 
 import (
-	"errors"
 	"time"
 )
+
 type Market struct {
 	MarketID       string  `json:"marketId"`
 	BaseAsset      string  `json:"baseAsset"`

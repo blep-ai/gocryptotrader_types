@@ -1,3 +1,5 @@
+import "github.com/gorilla/websocket"
+
 type WebsocketClient struct {
 	Hub           *WebsocketHub
 	Conn          *websocket.Conn

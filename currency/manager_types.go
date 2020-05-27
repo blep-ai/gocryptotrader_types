@@ -5,6 +5,7 @@ import (
 
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
+
 type PairsManager struct {
 	RequestFormat   *PairFormat               `json:"requestFormat,omitempty"`
 	ConfigFormat    *PairFormat               `json:"configFormat,omitempty"`
