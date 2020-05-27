@@ -12,3 +12,4 @@ type ICommunicate interface {
 	IsConnected() bool
 	GetName() string
 }
+type IComm []ICommunicate

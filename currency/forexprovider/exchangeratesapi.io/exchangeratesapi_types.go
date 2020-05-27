@@ -20,3 +20,4 @@ type TimeSeriesRates struct {
 	EndAt   string                 `json:"end_at"`
 	Rates   map[string]interface{} `json:"rates"`
 }
+type HistoricalRates Rates

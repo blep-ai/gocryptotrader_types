@@ -10,3 +10,4 @@ type BasicLimit struct {
 type Limiter interface {
 	Limit(EndpointLimit) error
 }
+type EndpointLimit int

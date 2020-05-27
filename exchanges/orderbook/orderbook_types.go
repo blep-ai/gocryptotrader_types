@@ -39,3 +39,4 @@ type Base struct {
 	AssetType    asset.Item    `json:"assetType"`
 	ExchangeName string        `json:"exchangeName"`
 }
+type byOBPrice []Item

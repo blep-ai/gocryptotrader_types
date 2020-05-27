@@ -58,3 +58,4 @@ type ExchangeResponse struct {
 	ID     string `json:"id"`
 	Status string `json:"status"`
 }
+type RequestType uint8

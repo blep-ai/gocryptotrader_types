@@ -144,3 +144,4 @@ type wsOrderUpdate struct {
 	TriggerPrice      float64 `json:"triggerPrice,string"`
 	Type              string  `json:"type"`
 }
+type HighLevelMarketData map[string]OverviewData

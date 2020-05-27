@@ -12,3 +12,5 @@ type Item struct {
 	Price     float64
 	Volume    float64
 }
+type ByPrice []Item
+type ByVolume []Item

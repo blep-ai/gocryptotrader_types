@@ -401,3 +401,6 @@ type wsListStauts struct {
 	RejectionReason string `json:"r"`
 	Symbol          string `json:"s"`
 }
+type RequestParamsTimeForceType string
+type RequestParamsOrderType string
+type TimeInterval string

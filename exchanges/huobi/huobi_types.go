@@ -444,3 +444,6 @@ type wsKLineResponseThing struct {
 	Rep    string `json:"rep"`
 	Status string `json:"status"`
 }
+type OrderBookDataRequestParamsType string
+type SpotNewOrderRequestParamsType string
+type TimeInterval string

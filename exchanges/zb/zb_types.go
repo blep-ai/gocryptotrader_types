@@ -106,3 +106,5 @@ type UserAddress struct {
 		} `json:"datas"`
 	} `json:"message"`
 }
+type SpotNewOrderRequestParamsType string
+type TimeInterval string

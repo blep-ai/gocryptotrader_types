@@ -266,3 +266,12 @@ type SwapFundingRate struct {
 	FeeRate       float64 `json:"feeRate,string"`
 	Leverage      int64   `json:"leverage"`
 }
+type Trades []TradeItem
+type OrdersInfo []OrderInfo
+type SwapTickers map[string]SwapTicker
+type SwapKlines []SwapKlineItem
+type SwapTrades []SwapTrade
+type SwapPositions []SwapPosition
+type SwapOrders []SwapOrder
+type OrderPlacementResponse OrderCancellationResponse
+type SwapOrderFills []SwapOrderFill

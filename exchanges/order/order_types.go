@@ -150,3 +150,11 @@ type ClassificationError struct {
 	OrderID  string
 	Err      error
 }
+type Status string
+type Type string
+type Side string
+type ByPrice []Detail
+type ByOrderType []Detail
+type ByCurrency []Detail
+type ByDate []Detail
+type ByOrderSide []Detail

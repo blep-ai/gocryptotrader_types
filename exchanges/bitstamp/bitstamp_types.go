@@ -157,3 +157,4 @@ type websocketOrderBook struct {
 	Timestamp      int64      `json:"timestamp,string"`
 	Microtimestamp string     `json:"microtimestamp"`
 }
+type Balances map[string]Balance

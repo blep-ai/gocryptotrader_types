@@ -8,3 +8,6 @@ type WhaleBombResult struct {
 	Orders               orderSummary
 	Status               string
 }
+type OrderSimulationResult WhaleBombResult
+type orderSummary []Item
+type ByPrice orderSummary

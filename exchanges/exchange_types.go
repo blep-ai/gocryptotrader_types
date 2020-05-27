@@ -113,3 +113,5 @@ type Base struct {
 	*request.Requester
 	Config *config.ExchangeConfig
 }
+type FeeType uint8
+type InternationalBankTransactionType uint8

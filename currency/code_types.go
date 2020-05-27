@@ -22,3 +22,4 @@ type Item struct {
 	AssocChain    string   `json:"associatedBlockchain"`
 	AssocExchange []string `json:"associatedExchanges"`
 }
+type Role uint8

@@ -15,3 +15,4 @@ type Conversion struct {
 	inverseRate *float64
 	mtx         *sync.Mutex
 }
+type Conversions []Conversion

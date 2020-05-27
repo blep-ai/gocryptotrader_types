@@ -460,3 +460,4 @@ type WsCancelOrderResponse struct {
 	Status       string `json:"status"`
 	ErrorMessage string `json:"errorMessage"`
 }
+type Tickers map[string]Ticker

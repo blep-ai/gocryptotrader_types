@@ -215,3 +215,4 @@ type wsOrderUpdate struct {
 	Method string        `json:"method"`
 	Params []interface{} `json:"params"`
 }
+type TimeInterval int
