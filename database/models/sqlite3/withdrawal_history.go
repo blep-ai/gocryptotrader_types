@@ -1,9 +1,24 @@
 package sqlite3
 
 import (
+	"context"
+
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
 	"github.com/volatiletech/null"
 )
 
+type (
+	// WithdrawalHistorySlice is an alias for a slice of pointers to WithdrawalHistory.
+	// This should generally be used opposed to []WithdrawalHistory.
+	WithdrawalHistorySlice []*WithdrawalHistory
+	// WithdrawalHistoryHook is the signature for custom WithdrawalHistory hook methods
+	WithdrawalHistoryHook func(context.Context, boil.ContextExecutor, *WithdrawalHistory) error
+
+	withdrawalHistoryQuery struct {
+		*queries.Query
+	}
+)
 type WithdrawalHistory struct {
 	ID           string      `boil:"id" json:"id" toml:"id" yaml:"id"`
 	Exchange     string      `boil:"exchange" json:"exchange" toml:"exchange" yaml:"exchange"`

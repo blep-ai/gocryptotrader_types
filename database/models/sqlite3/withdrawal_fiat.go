@@ -1,5 +1,23 @@
 package sqlite3
 
+import (
+	"context"
+
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
+)
+
+type (
+	// WithdrawalFiatSlice is an alias for a slice of pointers to WithdrawalFiat.
+	// This should generally be used opposed to []WithdrawalFiat.
+	WithdrawalFiatSlice []*WithdrawalFiat
+	// WithdrawalFiatHook is the signature for custom WithdrawalFiat hook methods
+	WithdrawalFiatHook func(context.Context, boil.ContextExecutor, *WithdrawalFiat) error
+
+	withdrawalFiatQuery struct {
+		*queries.Query
+	}
+)
 type WithdrawalFiat struct {
 	ID                  int64   `boil:"id" json:"id" toml:"id" yaml:"id"`
 	BankName            string  `boil:"bank_name" json:"bank_name" toml:"bank_name" yaml:"bank_name"`

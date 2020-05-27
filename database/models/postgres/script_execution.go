@@ -1,11 +1,25 @@
 package postgres
 
 import (
+	"context"
 	"time"
 
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
 	"github.com/volatiletech/null"
 )
 
+type (
+	// ScriptExecutionSlice is an alias for a slice of pointers to ScriptExecution.
+	// This should generally be used opposed to []ScriptExecution.
+	ScriptExecutionSlice []*ScriptExecution
+	// ScriptExecutionHook is the signature for custom ScriptExecution hook methods
+	ScriptExecutionHook func(context.Context, boil.ContextExecutor, *ScriptExecution) error
+
+	scriptExecutionQuery struct {
+		*queries.Query
+	}
+)
 type ScriptExecution struct {
 	ID              string      `boil:"id" json:"id" toml:"id" yaml:"id"`
 	ScriptID        null.String `boil:"script_id" json:"script_id,omitempty" toml:"script_id" yaml:"script_id,omitempty"`

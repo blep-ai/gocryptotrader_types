@@ -1,5 +1,23 @@
 package sqlite3
 
+import (
+	"context"
+
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
+)
+
+type (
+	// ScriptExecutionSlice is an alias for a slice of pointers to ScriptExecution.
+	// This should generally be used opposed to []ScriptExecution.
+	ScriptExecutionSlice []*ScriptExecution
+	// ScriptExecutionHook is the signature for custom ScriptExecution hook methods
+	ScriptExecutionHook func(context.Context, boil.ContextExecutor, *ScriptExecution) error
+
+	scriptExecutionQuery struct {
+		*queries.Query
+	}
+)
 type ScriptExecution struct {
 	ID              int64  `boil:"id" json:"id" toml:"id" yaml:"id"`
 	ScriptID        string `boil:"script_id" json:"script_id" toml:"script_id" yaml:"script_id"`

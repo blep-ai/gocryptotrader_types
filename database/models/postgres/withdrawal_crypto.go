@@ -1,9 +1,24 @@
 package postgres
 
 import (
+	"context"
+
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
 	"github.com/volatiletech/null"
 )
 
+type (
+	// WithdrawalCryptoSlice is an alias for a slice of pointers to WithdrawalCrypto.
+	// This should generally be used opposed to []WithdrawalCrypto.
+	WithdrawalCryptoSlice []*WithdrawalCrypto
+	// WithdrawalCryptoHook is the signature for custom WithdrawalCrypto hook methods
+	WithdrawalCryptoHook func(context.Context, boil.ContextExecutor, *WithdrawalCrypto) error
+
+	withdrawalCryptoQuery struct {
+		*queries.Query
+	}
+)
 type WithdrawalCrypto struct {
 	ID                 int64       `boil:"id" json:"id" toml:"id" yaml:"id"`
 	WithdrawalCryptoID null.String `boil:"withdrawal_crypto_id" json:"withdrawal_crypto_id,omitempty" toml:"withdrawal_crypto_id" yaml:"withdrawal_crypto_id,omitempty"`

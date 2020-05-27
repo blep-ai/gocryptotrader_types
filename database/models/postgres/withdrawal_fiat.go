@@ -1,9 +1,24 @@
 package postgres
 
 import (
+	"context"
+
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
 	"github.com/volatiletech/null"
 )
 
+type (
+	// WithdrawalFiatSlice is an alias for a slice of pointers to WithdrawalFiat.
+	// This should generally be used opposed to []WithdrawalFiat.
+	WithdrawalFiatSlice []*WithdrawalFiat
+	// WithdrawalFiatHook is the signature for custom WithdrawalFiat hook methods
+	WithdrawalFiatHook func(context.Context, boil.ContextExecutor, *WithdrawalFiat) error
+
+	withdrawalFiatQuery struct {
+		*queries.Query
+	}
+)
 type WithdrawalFiat struct {
 	ID                int64       `boil:"id" json:"id" toml:"id" yaml:"id"`
 	WithdrawalFiatID  null.String `boil:"withdrawal_fiat_id" json:"withdrawal_fiat_id,omitempty" toml:"withdrawal_fiat_id" yaml:"withdrawal_fiat_id,omitempty"`
