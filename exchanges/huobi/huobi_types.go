@@ -1,4 +1,5 @@
 package huobi
+
 type Response struct {
 	Status       string `json:"status"`
 	Channel      string `json:"ch"`

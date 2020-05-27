@@ -1,9 +1,11 @@
 package coinbene
+
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
+
 type TickerData struct {
 	Symbol      string  `json:"symbol"`
 	LatestPrice float64 `json:"latestPrice,string"`

@@ -1,8 +1,10 @@
 package currency
+
 import (
 	"sync"
 	"time"
 )
+
 type BaseCodes struct {
 	Items          []*Item
 	LastMainUpdate time.Time

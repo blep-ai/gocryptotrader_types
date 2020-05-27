@@ -1,21 +1,9 @@
 package sqlite3
-import (
-	"context"
-	"database/sql"
-	"fmt"
-	"reflect"
-	"strings"
-	"sync"
-	"time"
 
-	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/boil"
-	"github.com/thrasher-corp/sqlboiler/queries"
-	"github.com/thrasher-corp/sqlboiler/queries/qm"
-	"github.com/thrasher-corp/sqlboiler/queries/qmhelper"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
+import (
 	"github.com/volatiletech/null"
 )
+
 type WithdrawalCrypto struct {
 	ID                  int64       `boil:"id" json:"id" toml:"id" yaml:"id"`
 	Address             string      `boil:"address" json:"address" toml:"address" yaml:"address"`

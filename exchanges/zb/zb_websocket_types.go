@@ -1,9 +1,11 @@
 package zb
+
 import (
 	"encoding/json"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 )
+
 type Subscription struct {
 	Event   string `json:"event"`
 	Channel string `json:"channel"`

@@ -1,9 +1,11 @@
 package okgroup
+
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 )
+
 type GetAccountCurrenciesResponse struct {
 	Name          string  `json:"name"`
 	Currency      string  `json:"currency"`

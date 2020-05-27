@@ -1,4 +1,5 @@
 package engine
+
 import (
 	"net/http"
 
@@ -6,6 +7,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/exchanges/orderbook"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/ticker"
 )
+
 type Route struct {
 	Name        string
 	Method      string

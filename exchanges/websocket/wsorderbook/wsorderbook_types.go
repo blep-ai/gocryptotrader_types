@@ -1,4 +1,5 @@
 package wsorderbook
+
 import (
 	"sync"
 	"time"
@@ -7,6 +8,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/orderbook"
 )
+
 type WebsocketOrderbookLocal struct {
 	ob                    map[currency.Pair]map[asset.Item]*orderbook.Base
 	buffer                map[currency.Pair]map[asset.Item][]*WebsocketOrderbookUpdate

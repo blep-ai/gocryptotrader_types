@@ -1,4 +1,1 @@
 package asset
-import (
-	"strings"
-)

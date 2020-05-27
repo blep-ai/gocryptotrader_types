@@ -1,5 +1,7 @@
 package engine
+
 import "time"
+
 type Settings struct {
 	ConfigFile            string
 	DataDir               string

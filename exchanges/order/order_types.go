@@ -1,12 +1,12 @@
 package order
+
 import (
-	"errors"
-	"fmt"
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
+
 type Submit struct {
 	ImmediateOrCancel bool
 	HiddenOrder       bool

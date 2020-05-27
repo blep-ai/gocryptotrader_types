@@ -1,13 +1,13 @@
 package withdraw
+
 import (
-	"errors"
 	"time"
 
-	"github.com/gofrs/uuid"
-	"github.com/blep-ai/gocryptotrader_types/common/cache"
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/portfolio/banking"
+	"github.com/gofrs/uuid"
 )
+
 type CryptoRequest struct {
 	Address    string
 	AddressTag string

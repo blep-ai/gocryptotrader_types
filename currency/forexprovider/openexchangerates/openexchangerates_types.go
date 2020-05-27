@@ -1,8 +1,10 @@
 package openexchangerates
+
 import (
 	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider/base"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
+
 type OXR struct {
 	base.Base
 	Requester *request.Requester

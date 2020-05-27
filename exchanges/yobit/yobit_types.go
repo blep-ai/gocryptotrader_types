@@ -1,5 +1,5 @@
 package yobit
-import "github.com/blep-ai/gocryptotrader_types/currency"
+
 type Response struct {
 	Return  interface{} `json:"return"`
 	Success int         `json:"success"`

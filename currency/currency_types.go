@@ -1,9 +1,11 @@
 package currency
+
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
 )
+
 type MainConfiguration struct {
 	ForexProviders         []FXSettings
 	CryptocurrencyProvider coinmarketcap.Settings

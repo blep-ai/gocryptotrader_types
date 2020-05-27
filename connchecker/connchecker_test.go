@@ -1,4 +1,1 @@
 package connchecker
-import (
-	"testing"
-)

@@ -1,4 +1,5 @@
 package main
+
 type ShaResponse struct {
 	ShaResp string `json:"sha"`
 }

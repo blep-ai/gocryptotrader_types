@@ -1,6 +1,6 @@
 package config
+
 import (
-	"sync"
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
@@ -11,6 +11,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/portfolio"
 	"github.com/blep-ai/gocryptotrader_types/portfolio/banking"
 )
+
 type Config struct {
 	Name              string                  `json:"name"`
 	EncryptConfig     int                     `json:"encryptConfig"`

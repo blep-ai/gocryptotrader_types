@@ -1,5 +1,7 @@
 package bitfinex
+
 import "time"
+
 type Ticker struct {
 	FlashReturnRate    float64
 	Bid                float64

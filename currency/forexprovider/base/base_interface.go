@@ -1,12 +1,9 @@
 package base
-import (
-	"errors"
-	"fmt"
-	"strings"
-	"sync"
 
-	"github.com/blep-ai/gocryptotrader_types/common"
+import (
+	"sync"
 )
+
 type FXHandler struct {
 	Primary Provider
 	Support []Provider

@@ -1,10 +1,12 @@
 package coinut
+
 import (
 	"sync"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
+
 type GenericResponse struct {
 	Nonce         int64    `json:"nonce"`
 	Reply         string   `json:"reply"`

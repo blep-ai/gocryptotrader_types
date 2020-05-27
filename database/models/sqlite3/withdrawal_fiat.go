@@ -1,20 +1,5 @@
 package sqlite3
-import (
-	"context"
-	"database/sql"
-	"fmt"
-	"reflect"
-	"strings"
-	"sync"
-	"time"
 
-	"github.com/pkg/errors"
-	"github.com/thrasher-corp/sqlboiler/boil"
-	"github.com/thrasher-corp/sqlboiler/queries"
-	"github.com/thrasher-corp/sqlboiler/queries/qm"
-	"github.com/thrasher-corp/sqlboiler/queries/qmhelper"
-	"github.com/thrasher-corp/sqlboiler/strmangle"
-)
 type WithdrawalFiat struct {
 	ID                  int64   `boil:"id" json:"id" toml:"id" yaml:"id"`
 	BankName            string  `boil:"bank_name" json:"bank_name" toml:"bank_name" yaml:"bank_name"`

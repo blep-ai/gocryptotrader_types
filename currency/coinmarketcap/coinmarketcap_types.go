@@ -1,9 +1,11 @@
 package coinmarketcap
+
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 )
+
 type Coinmarketcap struct {
 	Verbose    bool
 	Enabled    bool

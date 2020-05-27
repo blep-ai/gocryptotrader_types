@@ -1,9 +1,11 @@
 package lbank
+
 import (
 	"encoding/json"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 )
+
 type Ticker struct {
 	Change   float64 `json:"change"`
 	High     float64 `json:"high"`

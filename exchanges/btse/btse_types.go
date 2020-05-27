@@ -1,5 +1,7 @@
 package btse
+
 import "time"
+
 type OverviewData struct {
 	High24Hr         float64 `json:"high24hr,string"`
 	HighestBid       float64 `json:"highestbid,string"`

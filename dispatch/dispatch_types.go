@@ -1,10 +1,11 @@
 package dispatch
+
 import (
 	"sync"
-	"time"
 
 	"github.com/gofrs/uuid"
 )
+
 type Dispatcher struct {
 	// routes refers to a subystem uuid ticket map with associated publish
 	// channels, a relayer will be given a unique id through its job channel,

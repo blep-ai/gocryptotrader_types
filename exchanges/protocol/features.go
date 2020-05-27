@@ -1,4 +1,5 @@
 package protocol
+
 type Features struct {
 	TickerBatching         bool `json:"tickerBatching,omitempty"`
 	AutoPairUpdates        bool `json:"autoPairUpdates,omitempty"`

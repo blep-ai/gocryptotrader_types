@@ -1,10 +1,9 @@
 package binance
-import (
-	"errors"
-	"time"
 
-	"github.com/blep-ai/gocryptotrader_types/currency"
+import (
+	"time"
 )
+
 type Response struct {
 	Code int    `json:"code"`
 	Msg  string `json:"msg"`

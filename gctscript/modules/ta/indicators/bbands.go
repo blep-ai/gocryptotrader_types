@@ -1,15 +1,10 @@
 package indicators
-import (
-	"errors"
-	"fmt"
-	"math"
-	"strings"
 
+import (
 	objects "github.com/d5/tengo/v2"
 	"github.com/thrasher-corp/gct-ta/indicators"
-	"github.com/blep-ai/gocryptotrader_types/gctscript/modules"
-	"github.com/blep-ai/gocryptotrader_types/gctscript/wrappers/validator"
 )
+
 type BBands struct {
 	objects.Array
 	Period               int

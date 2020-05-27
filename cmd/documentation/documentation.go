@@ -1,21 +1,9 @@
 package main
-import (
-	"encoding/json"
-	"errors"
-	"flag"
-	"fmt"
-	"html/template"
-	"io/ioutil"
-	"log"
-	"os"
-	"path/filepath"
-	"strings"
-	"time"
 
-	"github.com/blep-ai/gocryptotrader_types/common"
-	"github.com/blep-ai/gocryptotrader_types/common/file"
-	"github.com/blep-ai/gocryptotrader_types/core"
+import (
+	"html/template"
 )
+
 type Contributor struct {
 	Login         string `json:"login"`
 	URL           string `json:"html_url"`

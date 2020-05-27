@@ -1,12 +1,10 @@
 package engine
-import (
-	"errors"
-	"sync/atomic"
 
+import (
 	"github.com/blep-ai/gocryptotrader_types/communications"
 	"github.com/blep-ai/gocryptotrader_types/communications/base"
-	"github.com/blep-ai/gocryptotrader_types/log"
 )
+
 type commsManager struct {
 	started  int32
 	stopped  int32

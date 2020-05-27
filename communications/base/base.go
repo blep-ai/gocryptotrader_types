@@ -1,7 +1,5 @@
 package base
-import (
-	"time"
-)
+
 type Base struct {
 	Name      string
 	Enabled   bool

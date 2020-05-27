@@ -1,4 +1,5 @@
 package exchange
+
 import (
 	"time"
 
@@ -8,6 +9,7 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/exchanges/request"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/websocket/wshandler"
 )
+
 type FeeBuilder struct {
 	FeeType FeeType
 	// Used for calculating crypto trading fees, deposits & withdrawals

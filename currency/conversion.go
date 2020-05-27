@@ -1,11 +1,9 @@
 package currency
-import (
-	"errors"
-	"fmt"
-	"sync"
 
-	"github.com/blep-ai/gocryptotrader_types/log"
+import (
+	"sync"
 )
+
 type ConversionRates struct {
 	m   map[*Item]map[*Item]*float64
 	mtx sync.Mutex

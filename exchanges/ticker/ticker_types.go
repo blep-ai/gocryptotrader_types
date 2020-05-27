@@ -1,13 +1,15 @@
 package ticker
+
 import (
 	"sync"
 	"time"
 
-	"github.com/gofrs/uuid"
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/dispatch"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
+	"github.com/gofrs/uuid"
 )
+
 type Service struct {
 	Tickers  map[string]map[*currency.Item]map[*currency.Item]map[asset.Item]*Ticker
 	Exchange map[string]uuid.UUID
