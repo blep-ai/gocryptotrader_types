@@ -1,0 +1,5 @@
+package currency
+
+import (
+	"testing"
+)

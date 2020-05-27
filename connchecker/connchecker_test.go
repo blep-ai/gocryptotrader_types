@@ -1,0 +1,5 @@
+package connchecker
+
+import (
+	"testing"
+)
