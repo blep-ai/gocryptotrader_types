@@ -1,5 +1,10 @@
 package bitmex
 
+type Parameter interface {
+	VerifyData() error
+	ToURLVals(path string) (string, error)
+	IsNil() bool
+}
 type APIKeyParams struct {
 	// API Key ID (public component).
 	APIKeyID string `json:"apiKeyID,omitempty"`

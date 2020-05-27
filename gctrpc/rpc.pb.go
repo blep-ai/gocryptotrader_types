@@ -1,6 +1,8 @@
 package gctrpc
 
 import (
+	context "context"
+
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
@@ -958,6 +960,70 @@ type GCTScriptGenericResponse struct {
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
 }
+type GoCryptoTraderClient interface {
+	GetInfo(ctx context.Context, in *GetInfoRequest, opts ...grpc.CallOption) (*GetInfoResponse, error)
+	GetSubsystems(ctx context.Context, in *GetSubsystemsRequest, opts ...grpc.CallOption) (*GetSusbsytemsResponse, error)
+	EnableSubsystem(ctx context.Context, in *GenericSubsystemRequest, opts ...grpc.CallOption) (*GenericSubsystemResponse, error)
+	DisableSubsystem(ctx context.Context, in *GenericSubsystemRequest, opts ...grpc.CallOption) (*GenericSubsystemResponse, error)
+	GetRPCEndpoints(ctx context.Context, in *GetRPCEndpointsRequest, opts ...grpc.CallOption) (*GetRPCEndpointsResponse, error)
+	GetCommunicationRelayers(ctx context.Context, in *GetCommunicationRelayersRequest, opts ...grpc.CallOption) (*GetCommunicationRelayersResponse, error)
+	GetExchanges(ctx context.Context, in *GetExchangesRequest, opts ...grpc.CallOption) (*GetExchangesResponse, error)
+	DisableExchange(ctx context.Context, in *GenericExchangeNameRequest, opts ...grpc.CallOption) (*GenericExchangeNameResponse, error)
+	GetExchangeInfo(ctx context.Context, in *GenericExchangeNameRequest, opts ...grpc.CallOption) (*GetExchangeInfoResponse, error)
+	GetExchangeOTPCode(ctx context.Context, in *GenericExchangeNameRequest, opts ...grpc.CallOption) (*GetExchangeOTPReponse, error)
+	GetExchangeOTPCodes(ctx context.Context, in *GetExchangeOTPsRequest, opts ...grpc.CallOption) (*GetExchangeOTPsResponse, error)
+	EnableExchange(ctx context.Context, in *GenericExchangeNameRequest, opts ...grpc.CallOption) (*GenericExchangeNameResponse, error)
+	GetTicker(ctx context.Context, in *GetTickerRequest, opts ...grpc.CallOption) (*TickerResponse, error)
+	GetTickers(ctx context.Context, in *GetTickersRequest, opts ...grpc.CallOption) (*GetTickersResponse, error)
+	GetOrderbook(ctx context.Context, in *GetOrderbookRequest, opts ...grpc.CallOption) (*OrderbookResponse, error)
+	GetOrderbooks(ctx context.Context, in *GetOrderbooksRequest, opts ...grpc.CallOption) (*GetOrderbooksResponse, error)
+	GetAccountInfo(ctx context.Context, in *GetAccountInfoRequest, opts ...grpc.CallOption) (*GetAccountInfoResponse, error)
+	GetAccountInfoStream(ctx context.Context, in *GetAccountInfoRequest, opts ...grpc.CallOption) (GoCryptoTrader_GetAccountInfoStreamClient, error)
+	GetConfig(ctx context.Context, in *GetConfigRequest, opts ...grpc.CallOption) (*GetConfigResponse, error)
+	GetPortfolio(ctx context.Context, in *GetPortfolioRequest, opts ...grpc.CallOption) (*GetPortfolioResponse, error)
+	GetPortfolioSummary(ctx context.Context, in *GetPortfolioSummaryRequest, opts ...grpc.CallOption) (*GetPortfolioSummaryResponse, error)
+	AddPortfolioAddress(ctx context.Context, in *AddPortfolioAddressRequest, opts ...grpc.CallOption) (*AddPortfolioAddressResponse, error)
+	RemovePortfolioAddress(ctx context.Context, in *RemovePortfolioAddressRequest, opts ...grpc.CallOption) (*RemovePortfolioAddressResponse, error)
+	GetForexProviders(ctx context.Context, in *GetForexProvidersRequest, opts ...grpc.CallOption) (*GetForexProvidersResponse, error)
+	GetForexRates(ctx context.Context, in *GetForexRatesRequest, opts ...grpc.CallOption) (*GetForexRatesResponse, error)
+	GetOrders(ctx context.Context, in *GetOrdersRequest, opts ...grpc.CallOption) (*GetOrdersResponse, error)
+	GetOrder(ctx context.Context, in *GetOrderRequest, opts ...grpc.CallOption) (*OrderDetails, error)
+	SubmitOrder(ctx context.Context, in *SubmitOrderRequest, opts ...grpc.CallOption) (*SubmitOrderResponse, error)
+	SimulateOrder(ctx context.Context, in *SimulateOrderRequest, opts ...grpc.CallOption) (*SimulateOrderResponse, error)
+	WhaleBomb(ctx context.Context, in *WhaleBombRequest, opts ...grpc.CallOption) (*SimulateOrderResponse, error)
+	CancelOrder(ctx context.Context, in *CancelOrderRequest, opts ...grpc.CallOption) (*CancelOrderResponse, error)
+	CancelAllOrders(ctx context.Context, in *CancelAllOrdersRequest, opts ...grpc.CallOption) (*CancelAllOrdersResponse, error)
+	GetEvents(ctx context.Context, in *GetEventsRequest, opts ...grpc.CallOption) (*GetEventsResponse, error)
+	AddEvent(ctx context.Context, in *AddEventRequest, opts ...grpc.CallOption) (*AddEventResponse, error)
+	RemoveEvent(ctx context.Context, in *RemoveEventRequest, opts ...grpc.CallOption) (*RemoveEventResponse, error)
+	GetCryptocurrencyDepositAddresses(ctx context.Context, in *GetCryptocurrencyDepositAddressesRequest, opts ...grpc.CallOption) (*GetCryptocurrencyDepositAddressesResponse, error)
+	GetCryptocurrencyDepositAddress(ctx context.Context, in *GetCryptocurrencyDepositAddressRequest, opts ...grpc.CallOption) (*GetCryptocurrencyDepositAddressResponse, error)
+	WithdrawFiatFunds(ctx context.Context, in *WithdrawFiatRequest, opts ...grpc.CallOption) (*WithdrawResponse, error)
+	WithdrawCryptocurrencyFunds(ctx context.Context, in *WithdrawCryptoRequest, opts ...grpc.CallOption) (*WithdrawResponse, error)
+	WithdrawalEventByID(ctx context.Context, in *WithdrawalEventByIDRequest, opts ...grpc.CallOption) (*WithdrawalEventByIDResponse, error)
+	WithdrawalEventsByExchange(ctx context.Context, in *WithdrawalEventsByExchangeRequest, opts ...grpc.CallOption) (*WithdrawalEventsByExchangeResponse, error)
+	WithdrawalEventsByDate(ctx context.Context, in *WithdrawalEventsByDateRequest, opts ...grpc.CallOption) (*WithdrawalEventsByExchangeResponse, error)
+	GetLoggerDetails(ctx context.Context, in *GetLoggerDetailsRequest, opts ...grpc.CallOption) (*GetLoggerDetailsResponse, error)
+	SetLoggerDetails(ctx context.Context, in *SetLoggerDetailsRequest, opts ...grpc.CallOption) (*GetLoggerDetailsResponse, error)
+	GetExchangePairs(ctx context.Context, in *GetExchangePairsRequest, opts ...grpc.CallOption) (*GetExchangePairsResponse, error)
+	EnableExchangePair(ctx context.Context, in *ExchangePairRequest, opts ...grpc.CallOption) (*GenericExchangeNameResponse, error)
+	DisableExchangePair(ctx context.Context, in *ExchangePairRequest, opts ...grpc.CallOption) (*GenericExchangeNameResponse, error)
+	GetOrderbookStream(ctx context.Context, in *GetOrderbookStreamRequest, opts ...grpc.CallOption) (GoCryptoTrader_GetOrderbookStreamClient, error)
+	GetExchangeOrderbookStream(ctx context.Context, in *GetExchangeOrderbookStreamRequest, opts ...grpc.CallOption) (GoCryptoTrader_GetExchangeOrderbookStreamClient, error)
+	GetTickerStream(ctx context.Context, in *GetTickerStreamRequest, opts ...grpc.CallOption) (GoCryptoTrader_GetTickerStreamClient, error)
+	GetExchangeTickerStream(ctx context.Context, in *GetExchangeTickerStreamRequest, opts ...grpc.CallOption) (GoCryptoTrader_GetExchangeTickerStreamClient, error)
+	GetAuditEvent(ctx context.Context, in *GetAuditEventRequest, opts ...grpc.CallOption) (*GetAuditEventResponse, error)
+	GCTScriptExecute(ctx context.Context, in *GCTScriptExecuteRequest, opts ...grpc.CallOption) (*GCTScriptGenericResponse, error)
+	GCTScriptUpload(ctx context.Context, in *GCTScriptUploadRequest, opts ...grpc.CallOption) (*GCTScriptGenericResponse, error)
+	GCTScriptReadScript(ctx context.Context, in *GCTScriptReadScriptRequest, opts ...grpc.CallOption) (*GCTScriptQueryResponse, error)
+	GCTScriptStatus(ctx context.Context, in *GCTScriptStatusRequest, opts ...grpc.CallOption) (*GCTScriptStatusResponse, error)
+	GCTScriptQuery(ctx context.Context, in *GCTScriptQueryRequest, opts ...grpc.CallOption) (*GCTScriptQueryResponse, error)
+	GCTScriptStop(ctx context.Context, in *GCTScriptStopRequest, opts ...grpc.CallOption) (*GCTScriptGenericResponse, error)
+	GCTScriptStopAll(ctx context.Context, in *GCTScriptStopAllRequest, opts ...grpc.CallOption) (*GCTScriptGenericResponse, error)
+	GCTScriptListAll(ctx context.Context, in *GCTScriptListAllRequest, opts ...grpc.CallOption) (*GCTScriptStatusResponse, error)
+	GCTScriptAutoLoadToggle(ctx context.Context, in *GCTScriptAutoLoadRequest, opts ...grpc.CallOption) (*GCTScriptGenericResponse, error)
+	GetHistoricCandles(ctx context.Context, in *GetHistoricCandlesRequest, opts ...grpc.CallOption) (*GetHistoricCandlesResponse, error)
+}
 type goCryptoTraderClient struct {
 	cc grpc.ClientConnInterface
 }
@@ -975,6 +1041,70 @@ type goCryptoTraderGetTickerStreamClient struct {
 }
 type goCryptoTraderGetExchangeTickerStreamClient struct {
 	grpc.ClientStream
+}
+type GoCryptoTraderServer interface {
+	GetInfo(context.Context, *GetInfoRequest) (*GetInfoResponse, error)
+	GetSubsystems(context.Context, *GetSubsystemsRequest) (*GetSusbsytemsResponse, error)
+	EnableSubsystem(context.Context, *GenericSubsystemRequest) (*GenericSubsystemResponse, error)
+	DisableSubsystem(context.Context, *GenericSubsystemRequest) (*GenericSubsystemResponse, error)
+	GetRPCEndpoints(context.Context, *GetRPCEndpointsRequest) (*GetRPCEndpointsResponse, error)
+	GetCommunicationRelayers(context.Context, *GetCommunicationRelayersRequest) (*GetCommunicationRelayersResponse, error)
+	GetExchanges(context.Context, *GetExchangesRequest) (*GetExchangesResponse, error)
+	DisableExchange(context.Context, *GenericExchangeNameRequest) (*GenericExchangeNameResponse, error)
+	GetExchangeInfo(context.Context, *GenericExchangeNameRequest) (*GetExchangeInfoResponse, error)
+	GetExchangeOTPCode(context.Context, *GenericExchangeNameRequest) (*GetExchangeOTPReponse, error)
+	GetExchangeOTPCodes(context.Context, *GetExchangeOTPsRequest) (*GetExchangeOTPsResponse, error)
+	EnableExchange(context.Context, *GenericExchangeNameRequest) (*GenericExchangeNameResponse, error)
+	GetTicker(context.Context, *GetTickerRequest) (*TickerResponse, error)
+	GetTickers(context.Context, *GetTickersRequest) (*GetTickersResponse, error)
+	GetOrderbook(context.Context, *GetOrderbookRequest) (*OrderbookResponse, error)
+	GetOrderbooks(context.Context, *GetOrderbooksRequest) (*GetOrderbooksResponse, error)
+	GetAccountInfo(context.Context, *GetAccountInfoRequest) (*GetAccountInfoResponse, error)
+	GetAccountInfoStream(*GetAccountInfoRequest, GoCryptoTrader_GetAccountInfoStreamServer) error
+	GetConfig(context.Context, *GetConfigRequest) (*GetConfigResponse, error)
+	GetPortfolio(context.Context, *GetPortfolioRequest) (*GetPortfolioResponse, error)
+	GetPortfolioSummary(context.Context, *GetPortfolioSummaryRequest) (*GetPortfolioSummaryResponse, error)
+	AddPortfolioAddress(context.Context, *AddPortfolioAddressRequest) (*AddPortfolioAddressResponse, error)
+	RemovePortfolioAddress(context.Context, *RemovePortfolioAddressRequest) (*RemovePortfolioAddressResponse, error)
+	GetForexProviders(context.Context, *GetForexProvidersRequest) (*GetForexProvidersResponse, error)
+	GetForexRates(context.Context, *GetForexRatesRequest) (*GetForexRatesResponse, error)
+	GetOrders(context.Context, *GetOrdersRequest) (*GetOrdersResponse, error)
+	GetOrder(context.Context, *GetOrderRequest) (*OrderDetails, error)
+	SubmitOrder(context.Context, *SubmitOrderRequest) (*SubmitOrderResponse, error)
+	SimulateOrder(context.Context, *SimulateOrderRequest) (*SimulateOrderResponse, error)
+	WhaleBomb(context.Context, *WhaleBombRequest) (*SimulateOrderResponse, error)
+	CancelOrder(context.Context, *CancelOrderRequest) (*CancelOrderResponse, error)
+	CancelAllOrders(context.Context, *CancelAllOrdersRequest) (*CancelAllOrdersResponse, error)
+	GetEvents(context.Context, *GetEventsRequest) (*GetEventsResponse, error)
+	AddEvent(context.Context, *AddEventRequest) (*AddEventResponse, error)
+	RemoveEvent(context.Context, *RemoveEventRequest) (*RemoveEventResponse, error)
+	GetCryptocurrencyDepositAddresses(context.Context, *GetCryptocurrencyDepositAddressesRequest) (*GetCryptocurrencyDepositAddressesResponse, error)
+	GetCryptocurrencyDepositAddress(context.Context, *GetCryptocurrencyDepositAddressRequest) (*GetCryptocurrencyDepositAddressResponse, error)
+	WithdrawFiatFunds(context.Context, *WithdrawFiatRequest) (*WithdrawResponse, error)
+	WithdrawCryptocurrencyFunds(context.Context, *WithdrawCryptoRequest) (*WithdrawResponse, error)
+	WithdrawalEventByID(context.Context, *WithdrawalEventByIDRequest) (*WithdrawalEventByIDResponse, error)
+	WithdrawalEventsByExchange(context.Context, *WithdrawalEventsByExchangeRequest) (*WithdrawalEventsByExchangeResponse, error)
+	WithdrawalEventsByDate(context.Context, *WithdrawalEventsByDateRequest) (*WithdrawalEventsByExchangeResponse, error)
+	GetLoggerDetails(context.Context, *GetLoggerDetailsRequest) (*GetLoggerDetailsResponse, error)
+	SetLoggerDetails(context.Context, *SetLoggerDetailsRequest) (*GetLoggerDetailsResponse, error)
+	GetExchangePairs(context.Context, *GetExchangePairsRequest) (*GetExchangePairsResponse, error)
+	EnableExchangePair(context.Context, *ExchangePairRequest) (*GenericExchangeNameResponse, error)
+	DisableExchangePair(context.Context, *ExchangePairRequest) (*GenericExchangeNameResponse, error)
+	GetOrderbookStream(*GetOrderbookStreamRequest, GoCryptoTrader_GetOrderbookStreamServer) error
+	GetExchangeOrderbookStream(*GetExchangeOrderbookStreamRequest, GoCryptoTrader_GetExchangeOrderbookStreamServer) error
+	GetTickerStream(*GetTickerStreamRequest, GoCryptoTrader_GetTickerStreamServer) error
+	GetExchangeTickerStream(*GetExchangeTickerStreamRequest, GoCryptoTrader_GetExchangeTickerStreamServer) error
+	GetAuditEvent(context.Context, *GetAuditEventRequest) (*GetAuditEventResponse, error)
+	GCTScriptExecute(context.Context, *GCTScriptExecuteRequest) (*GCTScriptGenericResponse, error)
+	GCTScriptUpload(context.Context, *GCTScriptUploadRequest) (*GCTScriptGenericResponse, error)
+	GCTScriptReadScript(context.Context, *GCTScriptReadScriptRequest) (*GCTScriptQueryResponse, error)
+	GCTScriptStatus(context.Context, *GCTScriptStatusRequest) (*GCTScriptStatusResponse, error)
+	GCTScriptQuery(context.Context, *GCTScriptQueryRequest) (*GCTScriptQueryResponse, error)
+	GCTScriptStop(context.Context, *GCTScriptStopRequest) (*GCTScriptGenericResponse, error)
+	GCTScriptStopAll(context.Context, *GCTScriptStopAllRequest) (*GCTScriptGenericResponse, error)
+	GCTScriptListAll(context.Context, *GCTScriptListAllRequest) (*GCTScriptStatusResponse, error)
+	GCTScriptAutoLoadToggle(context.Context, *GCTScriptAutoLoadRequest) (*GCTScriptGenericResponse, error)
+	GetHistoricCandles(context.Context, *GetHistoricCandlesRequest) (*GetHistoricCandlesResponse, error)
 }
 type UnimplementedGoCryptoTraderServer struct {
 }

@@ -3,6 +3,7 @@ package request
 import (
 	"io"
 	"net/http"
+	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/common/timedmutex"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/nonce"
@@ -35,3 +36,6 @@ type Item struct {
 	IsReserved    bool
 	Endpoint      EndpointLimit
 }
+type Backoff func(n int) time.Duration
+type RetryPolicy func(resp *http.Response, err error) (bool, error)
+type RequesterOption func(*Requester)

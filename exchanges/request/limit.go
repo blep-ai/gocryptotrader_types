@@ -7,3 +7,6 @@ import (
 type BasicLimit struct {
 	r *rate.Limiter
 }
+type Limiter interface {
+	Limit(EndpointLimit) error
+}
