@@ -1,7 +1,4 @@
 package protocol
-
-// Features holds all variables for the exchanges supported features
-// for a protocol (e.g REST or Websocket)
 type Features struct {
 	TickerBatching         bool `json:"tickerBatching,omitempty"`
 	AutoPairUpdates        bool `json:"autoPairUpdates,omitempty"`

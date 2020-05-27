@@ -1,15 +1,13 @@
 package orderbook
-
 import (
 	"sync"
 	"time"
 
+	"github.com/gofrs/uuid"
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/dispatch"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
-	"github.com/gofrs/uuid"
 )
-
 type Book struct {
 	b     *Base
 	Main  uuid.UUID

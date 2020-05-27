@@ -1,9 +1,8 @@
 package vm
-
 import (
+	"errors"
 	"time"
 )
-
 type Config struct {
 	Enabled            bool          `json:"enabled"`
 	ScriptTimeout      time.Duration `json:"timeout"`

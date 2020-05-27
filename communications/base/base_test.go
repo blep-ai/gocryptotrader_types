@@ -1,5 +1,7 @@
 package base
-
+import (
+	"testing"
+)
 type CommunicationProvider struct {
 	ICommunicate
 

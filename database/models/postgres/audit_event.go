@@ -1,9 +1,21 @@
 package postgres
-
 import (
+	"context"
+	"database/sql"
+	"fmt"
+	"reflect"
+	"strconv"
+	"strings"
+	"sync"
 	"time"
-)
 
+	"github.com/pkg/errors"
+	"github.com/thrasher-corp/sqlboiler/boil"
+	"github.com/thrasher-corp/sqlboiler/queries"
+	"github.com/thrasher-corp/sqlboiler/queries/qm"
+	"github.com/thrasher-corp/sqlboiler/queries/qmhelper"
+	"github.com/thrasher-corp/sqlboiler/strmangle"
+)
 type AuditEvent struct {
 	ID         int64     `boil:"id" json:"id" toml:"id" yaml:"id"`
 	Type       string    `boil:"type" json:"type" toml:"type" yaml:"type"`

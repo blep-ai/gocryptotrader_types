@@ -1,3 +1,5 @@
+package exmo
+import "github.com/blep-ai/gocryptotrader_types/currency"
 type Trades struct {
 	TradeID  int64   `json:"trade_id"`
 	Type     string  `json:"string"`

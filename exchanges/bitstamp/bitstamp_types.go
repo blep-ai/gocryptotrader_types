@@ -1,13 +1,4 @@
 package bitstamp
-
-// Transaction types
-const (
-	Deposit = iota
-	Withdrawal
-	MarketTrade
-	SubAccountTransfer = 14
-)
-
 type Ticker struct {
 	Last      float64 `json:"last,string"`
 	High      float64 `json:"high,string"`

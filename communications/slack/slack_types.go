@@ -1,3 +1,4 @@
+package slack
 type WebsocketResponse struct {
 	Type    string `json:"type"`
 	ReplyTo int    `json:"reply_to"`

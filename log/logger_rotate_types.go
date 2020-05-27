@@ -1,10 +1,8 @@
 package log
-
 import (
 	"os"
 	"sync"
 )
-
 type Rotate struct {
 	FileName string
 	Rotate   *bool

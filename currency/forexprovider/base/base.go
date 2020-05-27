@@ -1,9 +1,7 @@
 package base
-
 import (
 	"time"
 )
-
 type Settings struct {
 	Name             string        `json:"name"`
 	Enabled          bool          `json:"enabled"`

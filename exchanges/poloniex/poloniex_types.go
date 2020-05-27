@@ -1,9 +1,9 @@
 package poloniex
-
 import (
 	"time"
-)
 
+	"github.com/blep-ai/gocryptotrader_types/currency"
+)
 type Ticker struct {
 	ID            float64 `json:"id"`
 	Last          float64 `json:"last,string"`

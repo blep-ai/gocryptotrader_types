@@ -1,12 +1,12 @@
 package database
-
 import (
 	"database/sql"
+	"errors"
+	"path/filepath"
 	"sync"
 
 	"github.com/blep-ai/gocryptotrader_types/database/drivers"
 )
-
 type Instance struct {
 	SQL       *sql.DB
 	DataPath  string

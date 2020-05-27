@@ -1,1 +1,4 @@
 package connchecker
+import (
+	"testing"
+)

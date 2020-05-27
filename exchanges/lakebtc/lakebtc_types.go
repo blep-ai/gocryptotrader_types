@@ -1,5 +1,4 @@
-import "github.com/toorop/go-pusher"
-
+package lakebtc
 type Ticker struct {
 	Last   float64
 	Bid    float64

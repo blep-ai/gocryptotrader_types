@@ -1,12 +1,10 @@
 package engine
-
 import (
 	"sync"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
 )
-
 type orderManagerConfig struct {
 	EnforceLimitConfig     bool
 	AllowMarketOrders      bool

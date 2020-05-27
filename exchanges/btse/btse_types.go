@@ -1,9 +1,5 @@
 package btse
-
 import "time"
-
-const (
-	// Default order type is good till cancel (or filled)
 type OverviewData struct {
 	High24Hr         float64 `json:"high24hr,string"`
 	HighestBid       float64 `json:"highestbid,string"`

@@ -1,3 +1,4 @@
+package bitflyer
 type ChainAnalysisBlock struct {
 	BlockHash     string   `json:"block_hash"`
 	Height        int64    `json:"height"`

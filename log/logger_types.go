@@ -1,10 +1,8 @@
 package log
-
 import (
 	"io"
 	"sync"
 )
-
 type Config struct {
 	Enabled *bool `json:"enabled"`
 	SubLoggerConfig

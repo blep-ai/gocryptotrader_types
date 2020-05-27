@@ -1,5 +1,5 @@
-import "github.com/thrasher-corp/gocryptotrader/currency"
-
+package gemini
+import "github.com/blep-ai/gocryptotrader_types/currency"
 type Ticker struct {
 	Ask    float64 `json:"ask,string"`
 	Bid    float64 `json:"bid,string"`

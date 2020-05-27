@@ -1,12 +1,10 @@
 package kline
-
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 	"github.com/blep-ai/gocryptotrader_types/exchanges/asset"
 )
-
 type Item struct {
 	Exchange string
 	Pair     currency.Pair

@@ -1,5 +1,7 @@
 package alphapoint
-
+import (
+	"github.com/blep-ai/gocryptotrader_types/exchanges/order"
+)
 type Response struct {
 	IsAccepted    bool    `json:"isAccepted"`
 	RejectReason  string  `json:"rejectReason"`

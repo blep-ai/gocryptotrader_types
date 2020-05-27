@@ -1,20 +1,5 @@
 package bitfinex
-
 import "time"
-
-// AcceptedOrderType defines the accepted market types, exchange strings denote
-// non-contract order types.
-var AcceptedOrderType = []string{"market", "limit", "stop", "trailing-stop",
-	"fill-or-kill", "exchange market", "exchange limit", "exchange stop",
-	"exchange trailing-stop", "exchange fill-or-kill"}
-
-// AcceptedWalletNames defines different wallets supported by the exchange
-var AcceptedWalletNames = []string{"trading", "exchange", "deposit", "margin",
-	"funding"}
-
-// AcceptableMethods defines a map of currency codes to methods
-var AcceptableMethods = make(map[string]string)
-
 type Ticker struct {
 	FlashReturnRate    float64
 	Bid                float64

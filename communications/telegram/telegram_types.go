@@ -1,3 +1,4 @@
+package telegram
 type User struct {
 	Ok          bool   `json:"ok"`
 	Description string `json:"description"`

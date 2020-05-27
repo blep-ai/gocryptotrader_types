@@ -1,11 +1,9 @@
 package kraken
-
 import (
 	"time"
 
 	"github.com/blep-ai/gocryptotrader_types/currency"
 )
-
 type TimeResponse struct {
 	Unixtime int64  `json:"unixtime"`
 	Rfc1123  string `json:"rfc1123"`

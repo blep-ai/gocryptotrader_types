@@ -1,5 +1,4 @@
 package currency
-
 import (
 	"sync"
 	"time"
@@ -7,7 +6,6 @@ import (
 	"github.com/blep-ai/gocryptotrader_types/currency/coinmarketcap"
 	"github.com/blep-ai/gocryptotrader_types/currency/forexprovider"
 )
-
 type Storage struct {
 	// FiatCurrencies defines the running fiat currencies in the currency
 	// storage
